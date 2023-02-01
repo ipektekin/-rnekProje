@@ -17,17 +17,19 @@ namespace ÖrnekProje
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void BitirTuşu_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Butona Basıldı");
+            MessageBox.Show("Teşekkürler :)");
 
             this.Close();
         }
 
         int bir;
-        private void button2_Click(object sender, EventArgs e)
+        private void buton1_Click(object sender, EventArgs e)
         {
             bir = 1;
+
+
         }
         int iki;
         private void Buton2_Click(object sender, EventArgs e)
@@ -36,47 +38,51 @@ namespace ÖrnekProje
         }
 
         int üç;
-        private void button3_Click(object sender, EventArgs e)
+        private void buton3_Click_1(object sender, EventArgs e)
         {
             üç = 3;
+
         }
 
         int dört;
-        private void button4_Click(object sender, EventArgs e)
+        private void buton4_Click_1(object sender, EventArgs e)
         {
             dört = 4;
+
         }
 
         int beş;
-        private void button5_Click(object sender, EventArgs e)
+        private void buton5_Click_1(object sender, EventArgs e)
         {
             beş = 5;
+
         }
 
         int altı;
-        private void button6_Click(object sender, EventArgs e)
+        private void buton6_Click_1(object sender, EventArgs e)
         {
             altı = 6;
+
         }
 
         int yedi;
-        private void button7_Click(object sender, EventArgs e)
+        private void buton7_Click_1(object sender, EventArgs e)
         {
             yedi = 7;
         }
 
         int sekiz;
-        private void button8_Click(object sender, EventArgs e)
+        private void buton8_Click_1(object sender, EventArgs e)
         {
             sekiz = 8;
         }
 
         int dokuz;
-        private void button9_Click(object sender, EventArgs e)
+        private void buton9_Click_1(object sender, EventArgs e)
         {
             dokuz = 9;
         }
-        string işlem ;
+        string işlem;
         private void ToplaButon_Click(object sender, EventArgs e)
         {
             işlem = "topla";
@@ -84,7 +90,7 @@ namespace ÖrnekProje
 
         private void HesaplaButon_Click(object sender, EventArgs e)
         {
-            if(işlem == "topla")
+            if (işlem == "topla")
             {
                 int toplam = bir + iki + üç + dört + beş + altı + yedi + sekiz + dokuz;
                 sonuctextbox.Text = Convert.ToString(toplam);
@@ -102,5 +108,6 @@ namespace ÖrnekProje
             işlem = "";
             sonuctextbox.Text = "";
         }
-    
+
+    }
 }
