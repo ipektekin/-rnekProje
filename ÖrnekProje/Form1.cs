@@ -23,5 +23,30 @@ namespace ÖrnekProje
 
             this.Close();
         }
+
+        int bir;
+        private void button2_Click(object sender, EventArgs e)
+        {
+            bir = 1;
+        }
+        int iki;
+        private void Buton2_Click(object sender, EventArgs e)
+        {
+            iki = 2;
+        }
+
+        string işlem ;
+        private void ToplaButon_Click(object sender, EventArgs e)
+        {
+            işlem = "topla";
+        }
+
+        private void HesaplaButon_Click(object sender, EventArgs e)
+        {
+            if(işlem == "topla")
+            {
+                sonuctextbox.Text = Convert.ToString(bir + iki);
+            }
+        }
     }
 }
